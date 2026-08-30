@@ -1,0 +1,242 @@
+/* ================= PAGE BACKGROUND ================= */
+
+body{
+  background-color:#fff6f1;
+  margin:0;
+  padding:0;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  font-family:"FunkySmile", cursive;
+}
+
+
+/* ================= CUSTOM FONT ================= */
+
+@font-face{
+  font-family:"FunkySmile";
+  src:url("../fonts/funky-smile.otf") format("truetype");
+}
+
+
+
+/* ================= MAIN HOME SECTION ================= */
+
+.home-content{
+  margin-top:200px;
+  max-width:700px;
+  text-align:center;
+  line-height:1.6;
+}
+
+
+.about-content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+/* ================= COMING SOON SECTION ================= */
+
+.coming-soon{
+  margin-top:140px; /* space below header */
+  text-align:center;
+
+  background:#ffffffcc;
+  padding:25px 40px;
+
+  border-radius:25px;
+  box-shadow:0 6px 0 #f2c7c7;
+
+  max-width:600px;
+}
+
+.coming-soon h2{
+  font-size:34px;
+  color:#5C4033;
+  margin-bottom:10px;
+}
+
+.coming-soon p{
+  font-size:22px;
+  color:#6b4b3e;
+  margin-bottom:20px;
+}
+
+/* email form */
+
+.signup-form{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.signup-form input{
+  padding:10px 14px;
+  border-radius:12px;
+  border:2px solid #f2c7c7;
+  font-family:"FunkySmile";
+}
+
+.signup-form button{
+  padding:10px 16px;
+  border-radius:12px;
+  border:none;
+
+  background:#f8b6b6;
+  color:#5C4033;
+
+  cursor:pointer;
+  font-family:"FunkySmile";
+}
+
+.signup-form button:hover{
+  background:#f49c9c;
+}
+.section-divider{
+  width:60%;
+  margin:40px auto;
+
+  border-top:4px dotted #f2c7c7;
+}
+/* ================= STRAWBERRY NAVIGATION ================= */
+
+.strawberry-nav{
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:150px;
+  margin-bottom:0px;
+  position:relative;
+  margin-top: -200px
+}
+
+
+/* decorative line behind strawberries */
+.strawberry-nav::before{
+  content:"";
+  position:absolute;
+  top:50px;
+  left:5%;
+  right:5%;
+  height:3px;
+  background:#f2c7c7;
+}
+ 
+
+
+
+.berry-step{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  position:relative;
+  z-index:1;
+}
+
+
+/* strawberry labels */
+
+.berry-step span{
+  margin-top:6px;
+  font-size:25px;
+  color:#1c4010;
+}
+
+
+/* strawberry icons */
+
+.berry{
+  width:100px;
+  cursor:pointer;
+  transition:transform .2s ease;
+}
+
+.berry:hover{
+  transform:scale(1.4);
+}
+
+
+
+/* ================= SLIDE FRAME ================= */
+
+.slides{
+
+  background-image:url("../images/slide1.png");
+
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+
+  width:750px;
+  height:550px;
+
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+
+  padding-top:120px;
+position: relative;
+}
+
+
+/* slide switching */
+
+.slide{
+  display:none;
+  width:420px;
+  padding-top:-10px;
+  top: 20px;
+
+}
+
+.slide.active{
+  display:block;
+}
+
+
+/* slide text */
+
+.slides h2{
+  color:#5C4033;
+  font-size:50px;
+  margin-bottom:18px;
+  margin-top:50px
+}
+
+.slides p{
+  color:#6b4b3e;
+  font-size:28px;
+  line-height:1.5;
+}
+.arrow{
+  width:150px;
+  cursor:pointer;
+
+  position:absolute;
+
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* left arrow position */
+.arrow-left{
+  left:-80px;
+}
+
+/* right arrow position */
+.arrow-right{
+  right:-80px;
+}
+.subslide{
+  display:none;
+}
+
+.subslide.active{
+  display:block;
+}
